@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor Alves Padilha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+
+        <header id="inicio">
+            <h1>STREETS OF RAGE</h1>
+            <p>FAN SITE</p>
+            <nav>
+                <ul>
+                    <li><a href="#apresentacao">Apresentação</a></li>
+                    <li><a href="#selecao_personagens">Personagens</a></li>
+                    <li><a href="#historia_jogos">História dos Jogos</a></li>
+                    <li><a href="#informacoes_jogos">Informações sobre os Jogos</a></li>
+                    <li><a href="#carrossel_musicos">Trilha Sonora</a></li>
+                    <li><a href="#quiz_franquia">Quiz</a></li>
+                    <li><a href="#sobre_nos">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <img src="img/Streets_of_Rage_logo_(2024).png">
+            <section id="apresentacao"> <!-- Ínicio (sobre a franquia) -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto unde quos libero maiores ut nesciunt error? Debitis vel architecto animi perspiciatis nulla, voluptas, incidunt aperiam, recusandae cupiditate illum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error itaque, in odio esse voluptates natus consequuntur recusandae ipsa voluptatem, sequi, enim dolorum sit nostrum deserunt doloribus libero! Repellendus, facilis?</p>
+            </section>
+
+            <section id="cards_selecao_personagens">
+                <h2>SELECIONE O SEU PERSONAGEM!</h2> <!-- Seleção de personagens -->
+                <div class="selecao-personagem">
+                    <button>Axel Stone</button>
+                    <button>Blaze Fielding</button>
+                    <button>Adam Hunter</button>
+                    <button>Cherry Hunter</button>
+                    <button>Floyd Iraia</button>
+                    <button>Estel Aguirre</button>
+                    <button>Max Thunder</button>
+                    <button>Shiva</button>
+                    <button>Skate Hunter</button>
+                    <button>Dr. Zan</button>
+                </div>
+                <aside id="painel_personagem">
+                    <img src="img/Personagens/Axel Stone/Axel_Stone_Idle.gif">
+                </aside>
+            </section>
+
+            <section id="historia_jogos"> <!-- História dos jogos -->
+                <button>SOR1</button>
+                <button>SOR2</button>
+                <button>SOR3</button>
+                <button>SOR4</button>
+
+            </section>
+
+            <section id="informacoes_jogos"> <!-- Informações técnicas sobre os jogos lançados -->
+                <table>
+
+                    <caption>Informações técnicas sobre os jogos lançados</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Ano de Lançamento</th>
+                            <th>Plataforma de Lançamento</th>
+                            <th>Desenvolvedora</th>
+                            <th>Metacritic</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr> <!-- SOR1 -->
+                            <td>Streets of Rage 🇺🇸 (Bare Knuckle 🇯🇵)</td>
+                            <td>1991</td>
+                            <td>SEGA Genesis</td>
+                            <td>SEGA</td>
+                            <td>7.3</td>
+                        </tr>
+                        <tr> <!-- SOR2 -->
+                            <td>Streets of Rage 2 🇺🇸 (Bare Knuckle II 🇯🇵)</td>
+                            <td>1993</td>
+                            <td>SEGA Mega Drive</td>
+                            <td>SEGA</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr> <!-- SOR3 -->
+                            <td>Streets of Rage 3 🇺🇸 (Bare Knuckle III 🇯🇵)</td>
+                            <td>1994</td>
+                            <td>SEGA Mega Drive</td>
+                            <td>SEGA</td>
+                            <td>6.5</td>
+                        </tr>
+                        <tr> <!-- SOR4 -->
+                            <td>Streets of Rage 4 🇺🇸 (Bare Knuckle IV 🇯🇵)</td>
+                            <td>2020</td>
+                            <td>PC, Nintendo Switch, PlayStation 4 & Xbox One.</td>
+                            <td>Dotemu</td>
+                            <td>8.0</td>
+                        </tr>
+                        <tr> <!-- SOR:R -->
+                            <td>Streets of Rage: Revolution</td>
+                            <td>TBA</td>
+                            <td>PC, PlayStation 5 & Xbox Series S/X</td>
+                            <td>Komi Games (Rumor)</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr> <!-- STREETS OF KAMUROCHO -->
+                            <td>Streets of Kamurocho</td>
+                            <td>2020</td>
+                            <td>PC (Steam)</td>
+                            <td>Ryu Ga Gotoku Studio</td>
+                            <td>7.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="carrossel_musico_padilha"> <!-- Carrossel de músicos -->
+                <article id="texto_carrossel_padilha"></article>
+            </section>
+
+            <section id="quiz_franquia"> <!-- Quiz sobre a franquia -->
+
+                <fieldset>
+                    <legend>QUIZ!<br>Será capaz de respondê-lo?</legend>
+
+                    <label for="campo_nome">Digite o seu nome para começar!</label><br><br>
+                    <input type="text" id="campo_nome" name="nome_visitante" minlength="3" required placeholder='Ex.: "Axel Stone", "Blaze Fielding"'><br><br>
+
+                    <label for="campo_email">Informe seu E-mail, caso queira receber novidades sobre o site!</label><br><br>
+                    <input type="email" id="campo_email" name="email_visitante"><br><br>
+
+                    <button id="btn_quiz_padilha">Começar Quiz!</button>
+
+                </fieldset>
+            </section>
+
+            <div class="quiz_modal_padilha">
+                <button id="btn_fechar_quiz_padilha">X</button>
+                <form>
+                    <fieldset>
+                        <legend>QUIZ - FRANQUIA STREETS OF RAGE</legend>
+
+                        <label for="pergunta1">1. A qual personagem pertence os golpes especiais Sword Strike e Roundhouse Kick?</label><br><br>
+                        <select name="golpes" id="pergunta1">
+                            <option value="axel">Axel Stone</option>
+                            <option value="floyd">Floyd Iraia</option>
+                            <option value="cherry">Cherry Hunter</option>
+                            <option value="adam">Adam Hunter</option>
+                            <option value="blaze">Blaze Fielding</option>
+                        </select>
+                        <button>Confirmar</button>
+
+                        <br><br><label>2. Qual personagem de Streets of Rage 1 está por trás do Sindicato do Crime?</label><br><br>
+
+                        <input type="radio" id="pergunta2_a" name="antagonista_jogo2" value="mry_msy">
+                        <label for="pergunta2_a">Mr. Y & Ms. Y</label><br>
+
+                        <input type="radio" id="pergunta2_b" name="antagonista_jogo2" value="big_ben">
+                        <label for="pergunta2_b">Big Ben</label><br>
+
+                        <input type="radio" id="pergunta2_c" name="antagonista_jogo2" value="mrx">
+                        <label for="pergunta2_c">Mr. X</label><br>
+
+                        <input type="radio" id="pergunta2_d" name="antagonista_jogo2" value="diva">
+                        <label for="pergunta2_d">Diva</label><br><br>
+
+                        <button>Confirmar</button>
+
+                        <br><br><label>3. Qual plataforma estreiou a franquia Streets of Rage em 1991?</label><br><br>
+
+                        <input type="radio" id="pergunta3_a" name="plataforma_original" value="saturn">
+                        <label for="pergunta3_a">Sega Saturn</label><br>
+
+                        <input type="radio" id="pergunta3_b" name="plataforma_original" value="snes">
+                        <label for="pergunta3_b">Super Nintendo (SNES)</label><br>
+
+                        <input type="radio" id="pergunta3_c" name="plataforma_original" value="genesis">
+                        <label for="pergunta3_c">Sega Genesis</label><br>
+
+                        <input type="radio" id="pergunta3_d" name="plataforma_original" value="mega drive">
+                        <label for="pergunta3_d">Sega Mega Drive</label><br><br>
+
+                        <button>Confirmar</button>
+
+                        <br><br><label>4. Quais golpes pertencem a Axel Stone e Blaze Fielding?</label><br><br>
+
+                        <input type="checkbox" id="pergunta4_op1" name="golpes_axel_blaze" value="hishousouzan">
+                        <label for="pergunta4_op1">Hishousouzan</label><br>
+
+                        <input type="checkbox" id="pergunta4_op2" name="golpes_axel_blaze" value="somersault_kick">
+                        <label for="pergunta4_op2">Somersault Kick</label><br>
+
+                        <input type="checkbox" id="pergunta4_op3" name="golpes_axel_blaze" value="grand_upper">
+                        <label for="pergunta4_op3">Grand Upper</label><br>
+
+                        <input type="checkbox" id="pergunta4_op4" name="golpes_axel_blaze" value="tiger_fang">
+                        <label for="pergunta4_op4">Tiger Fang</label><br>
+
+                        <input type="checkbox" id="pergunta4_op5" name="golpes_axel_blaze" value="embukyaku">
+                        <label for="pergunta4_op5">Embukyaku</label><br>
+
+                        <input type="checkbox" id="pergunta4_op6" name="golpes_axel_blaze" value="spirit_dance">
+                        <label for="pergunta4_op6">Spirit Dance</label><br>
+
+                        <input type="checkbox" id="pergunta4_op7" name="golpes_axel_blaze" value="dragon_smash">
+                        <label for="pergunta4_op7">Dragon Smash</label><br>
+
+                        <button>Confirmar</button>
+
+                        <br><br><label>5. Quem é o lendário compositor responsável pela icônica trilha sonora eletrônica da trilogia Clássica?</label><br><br>
+
+                        <input type="radio" id="pergunta5_a" name="compositor_original" value="koji_kondo">
+                        <label for="pergunta5_a">Koji Kondo</label><br>
+
+                        <input type="radio" id="pergunta5_b" name="compositor_original" value="yuzo_koshiro">
+                        <label for="pergunta5_b">Yuzo Koshiro</label><br>
+
+                        <input type="radio" id="pergunta5_c"
+                            name="compositor_original" value="olivier_deriviere">
+                        <label for="pergunta5_c">Olivier Deriviere</label><br>
+
+                        <input type="radio" id="pergunta5_d"
+                            name="compositor_original" value="motohiro_kawashima">
+                        <label for="pergunta5_d">Motohiro Kawashima</label><br>
+
+                        <button type="button">Confirmar</button>
+                
+                    </fieldset>
+                </form>
+            </div>
+
+        </main>
+
+        <footer id="sobre_nos"> <!-- Sobre nós & Copyrights -->
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
