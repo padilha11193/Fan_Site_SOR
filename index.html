@@ -6,6 +6,45 @@
     <title>João Victor Alves Padilha</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+
+            background-color: rgba(20, 20, 30, 0.9);
+        }
+
+
+        .quiz_modal_padilha {
+            display: none;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+
+            width: 90%;
+            max-width: 700px;
+            max-height: 85vh;
+            overflow-y: auto;
+
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+    </style>
 </head>
 <body>
     <div id="container">
@@ -18,8 +57,8 @@
                     <li><a href="#apresentacao">Apresentação</a></li>
                     <li><a href="#selecao_personagens">Personagens</a></li>
                     <li><a href="#historia_jogos">História dos Jogos</a></li>
-                    <li><a href="#informacoes_jogos">Informações sobre os Jogos</a></li>
-                    <li><a href="#carrossel_musicos">Trilha Sonora</a></li>
+                    <li><a href="#historia_jogos_padilha">Informações sobre os Jogos</a></li>
+                    <li><a href="#carrossel_musico_padilha">Trilha Sonora</a></li>
                     <li><a href="#quiz_franquia">Quiz</a></li>
                     <li><a href="#sobre_nos">Sobre nós</a></li>
                 </ul>
@@ -32,31 +71,34 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto unde quos libero maiores ut nesciunt error? Debitis vel architecto animi perspiciatis nulla, voluptas, incidunt aperiam, recusandae cupiditate illum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error itaque, in odio esse voluptates natus consequuntur recusandae ipsa voluptatem, sequi, enim dolorum sit nostrum deserunt doloribus libero! Repellendus, facilis?</p>
             </section>
 
-            <section id="cards_selecao_personagens">
-                <h2>SELECIONE O SEU PERSONAGEM!</h2> <!-- Seleção de personagens -->
-                <div class="selecao-personagem">
-                    <button>Axel Stone</button>
-                    <button>Blaze Fielding</button>
-                    <button>Adam Hunter</button>
-                    <button>Cherry Hunter</button>
-                    <button>Floyd Iraia</button>
-                    <button>Estel Aguirre</button>
-                    <button>Max Thunder</button>
-                    <button>Shiva</button>
-                    <button>Skate Hunter</button>
-                    <button>Dr. Zan</button>
+            <h2>SELECIONE O SEU PERSONAGEM!</h2> <!-- Seleção de personagens -->
+            <section class="personagens_padilha">
+                <div class="cards_selecao_personagens_padilha">
+                        <button>Axel Stone</button>
+                        <button>Blaze Fielding</button>
+                        <button>Adam Hunter</button>
+                        <button>Cherry Hunter</button>
+                        <button>Floyd Iraia</button>
+                        <button>Estel Aguirre</button>
+                        <button>Max Thunder</button>
+                        <button>Shiva</button>
+                        <button>Skate Hunter</button>
+                        <button>Dr. Zan</button>
                 </div>
                 <aside id="painel_personagem">
                     <img src="img/Personagens/Axel Stone/Axel_Stone_Idle.gif">
                 </aside>
             </section>
 
-            <section id="historia_jogos"> <!-- História dos jogos -->
-                <button>SOR1</button>
-                <button>SOR2</button>
-                <button>SOR3</button>
-                <button>SOR4</button>
+            <section id="historia_jogos_padilha"> <!-- História dos jogos -->
+                <div class="botoes_historia_padilha">
+                    <button type="button" id="btn_sor1_padilha">SOR1</button>
+                    <button type="button" id="btn_sor2_padilha">SOR2</button>
+                    <button type="button" id="btn_sor3_padilha">SOR3</button>
+                    <button type="button" id="btn_sor4_padilha">SOR4</button>
+                </div>
 
+                <p id="texto_historia_padilha">Selecione um jogo ao lado para ler sua história.</p>
             </section>
 
             <section id="informacoes_jogos"> <!-- Informações técnicas sobre os jogos lançados -->
@@ -122,7 +164,15 @@
             </section>
 
             <section id="carrossel_musico_padilha"> <!-- Carrossel de músicos -->
-                <article id="texto_carrossel_padilha"></article>
+                <img src="img/Musicos/yuzo_koshiro_foto.webp">
+                <article class="texto_carrossel_padilha">
+                    <h2 id="nome_musico_padilha">Yuzo Koshiro</h2>
+                    <p id="sobre_musico_padilha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt ipsam fuga iure? Quibusdam, eligendi id, hic ab laboriosam sed obcaecati tenetur aut praesentium, ipsam quidem culpa fugit libero fugiat?</p>
+                </article>
+                <div class="botoes_carrossel_padilha">
+                    <button type="button">Próximo</button>
+                    <button type="button">Anterior</button>
+                </div>
             </section>
 
             <section id="quiz_franquia"> <!-- Quiz sobre a franquia -->
@@ -142,7 +192,7 @@
             </section>
 
             <div class="quiz_modal_padilha">
-                <button id="btn_fechar_quiz_padilha">X</button>
+                <button type="button" id="btn_fechar_quiz_padilha">X</button>
                 <form>
                     <fieldset>
                         <legend>QUIZ - FRANQUIA STREETS OF RAGE</legend>
@@ -231,6 +281,10 @@
                         <label for="pergunta5_d">Motohiro Kawashima</label><br>
 
                         <button type="button">Confirmar</button>
+
+                        <h3>Deixe a sua opinião!</h3>
+                        <label for="opiniao_visitante">Caso queira, escreva no campo abaixo seu feedback sobre o site!</label>
+                        <textarea id="opiniao_visitante" name="analise_site" rows="10" cols="75" placeholder="Escreva aqui!"></textarea>
                 
                     </fieldset>
                 </form>
