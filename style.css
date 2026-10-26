@@ -1,22 +1,136 @@
+/* ============================================================
+    CUSTOMIZAÇÃO REFERENTE AO HTML GERAL
+=============================================================== */
+
 body {
     background-image: url('img/background/SOR_background.webp');
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-color: #0a0a10;
+
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+header nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ff3333;
+}
+
+main > img {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 100%;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+    CUSTOMIZAÇÃO REFERENTE AO TEXTO DE APRESENTAÇÃO
+=============================================================== */
+
+#apresentacao {
+    border-radius: 8px;
+    padding: 30px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: 5px solid #ffcc00;
+    
+}
+
+/* ============================================================
+    CUSTOMIZAÇÃO REFERENTE AOS CARDS DE SELEÇÃO DE PERSONAGEM
+=============================================================== */
+
 .personagens_padilha {
     display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .cards_selecao_personagens_padilha {
+    width: 100%;
+    max-width: 800px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
+
+.cards_selecao_personagens_padilha button {
+    height: 200px;
+    display: flex;
+    border: 2px solid #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: #1a1a24;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cards_selecao_personagens_padilha button img {
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+
+}
+
+.cards_selecao_personagens_padilha button:hover {
+    border: 2px solid #ff3333;
+    transform: translateY(-5px) rotate(2deg);
+}
+
+#painel_personagem_padilha {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+
+    background-color: #000000;
+    background-image: url(img/background/fundo_personagem.jpg);
+    background-position: bottom;
+    border: 3px solid #ffcc00;
+}
+/* ============================================================
+    CUSTOMIZAÇÃO REFERENTE À SEÇÃO DE HISTÓRIA DOS JOGOS
+=============================================================== */
 
 #historia_jogos_padilha {
     gap: 10px;
@@ -28,11 +142,46 @@ body {
     align-self: center;
 }
 
+#texto_historia_padilha {
+    border-top: 5px solid #ff3333;
+    border-radius: 8px;
+    padding: 30px;
+
+    line-height: 1.6;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .botoes_historia_padilha {
+    border: 2px solid #333;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 15px;
+
+    cursor: pointer;
+
+    color: #ffffff;
+    background-color: #1a1a24;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+
+.botoes_historia_padilha button:hover {
+    color: #ffffff;
+    border-color: #ffcc00;
+    background-color: #2a2a35;
+}
+
+.botoes_historia_padilha button img {
+    padding: 10px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* ============================================================
+    CUSTOMIZAÇÃO REFERENTE AOS CARROSSEL DE MÚSICOS
+=============================================================== */
 
 #carrossel_musico_padilha {
     display: grid;
@@ -46,4 +195,44 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* ============================================================
+    CUSTOMIZAÇÃO REFERENTE AO FORMULÁRIO "QUIZ"
+=============================================================== */
+
+.quiz_modal_padilha {
+    color: black;
+}
+
+
+/* Respostas do quiz */
+
+.resposta-correta {
+    color: green;
+    font-weight: bold;
+}
+
+.resposta-incorreta {
+    color: red;
+    font-weight: bold;
+}
+
+/* Destaque para a lista da pergunta 1 */
+
+select.resposta-correta {
+    border: 2px solid green;
+}
+
+select.resposta-incorreta {
+    border: 2px solid red;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+select:disabled {
+    opacity: 1;
+    cursor: not-allowed;
 }
