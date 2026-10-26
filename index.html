@@ -19,57 +19,35 @@
             width: 100%;
             max-width: 1200px;
             padding: 20px;
-
-            background-color: rgba(20, 20, 30, 0.9);
-        }
-
-
-        .quiz_modal_padilha {
-            display: none;
-
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1000;
-
-            width: 90%;
-            max-width: 700px;
-            max-height: 85vh;
-            overflow-y: auto;
-
-            padding: 20px;
-            background-color: white;
-            border: 1px solid #333;
-            border-radius: 8px;
         }
 
     </style>
 </head>
 <body>
-    <div id="container">
 
-        <header id="inicio">
-            <h1>STREETS OF RAGE</h1>
-            <p>FAN SITE</p>
-            <nav>
-                <ul>
-                    <li><a href="#apresentacao">Apresentação</a></li>
-                    <li><a href="#selecao_personagens">Personagens</a></li>
-                    <li><a href="#historia_jogos">História dos Jogos</a></li>
-                    <li><a href="#historia_jogos_padilha">Informações sobre os Jogos</a></li>
-                    <li><a href="#carrossel_musico_padilha">Trilha Sonora</a></li>
-                    <li><a href="#quiz_franquia">Quiz</a></li>
-                    <li><a href="#sobre_nos">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header id="inicio">
+        <h1 style="color: #ff3333; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px;">STREETS OF RAGE</h1>
+        <p>FAN SITE</p>
+        <nav>
+            <ul>
+                <li><a href="#apresentacao_padilha">Apresentação</a></li>
+                <li><a href="#personagens_padilha">Personagens</a></li>
+                <li><a href="#historia_jogos_padilha">História dos Jogos</a></li>
+                <li><a href="#informacoes_jogos_padilha">Informações sobre os Jogos</a></li>
+                <li><a href="#carrossel_musico_padilha">Trilha Sonora</a></li>
+                <li><a href="#quiz_franquia_padilha">Quiz</a></li>
+                <li><a href="#sobre_nos">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
         
         <main>
             <img src="img/logos/Streets_of_Rage_logo_(2024).png">
 
-            <section id="apresentacao"> <!-- Ínicio (sobre a franquia) -->
-                <h2>Sobre Streets of Rage</h2>
+            <section id="apresentacao_padilha"> <!-- Ínicio (sobre a franquia) -->
+                <h2 style="color: #ffcc00; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px;">Sobre a franquia</h2>
                     <p>
                         Lançada originalmente em 1991 pela SEGA para o Mega Drive,
                         <strong>Streets of Rage</strong> é uma das franquias mais
@@ -115,8 +93,8 @@
                     </p><br><br>
             </section>
 
-            <h2>SELECIONE O SEU PERSONAGEM!</h2> <!-- Seleção de personagens -->
-            <section class="personagens_padilha">
+            <h2 style="color: #ffcc00; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px;">SELECIONE O SEU PERSONAGEM!</h2> <!-- Seleção de personagens -->
+            <section id="personagens_padilha">
                 <div class="cards_selecao_personagens_padilha">
                         <button type="button" id="card_axel"><img src="img/Personagens/Axel Stone/Axel_Stone_HUD.png"></button>
                         <button type="button" id="card_blaze"><img src="img/Personagens/Blaze Fielding/Blaze_Fielding_HUD.png"></button>
@@ -134,6 +112,7 @@
                 </aside>
             </section>
 
+            <h2 style="color: #ffcc00; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px;">CONHEÇA A HISTÓRIA!</h2>
             <section id="historia_jogos_padilha"> <!-- História dos jogos -->
                 <div class="botoes_historia_padilha">
                     <button type="button" id="btn_sor1_padilha"><img src="img/logos/Streets_of_Rage_logo_(2024).png"></button>
@@ -145,10 +124,10 @@
                 <p id="texto_historia_padilha">Selecione um jogo ao lado para ler sua história.</p>
             </section>
 
-            <section id="informacoes_jogos"> <!-- Informações técnicas sobre os jogos lançados -->
+            <section id="informacoes_jogos_padilha"> <!-- Informações técnicas sobre os jogos lançados -->
                 <table>
 
-                    <caption>Informações técnicas sobre os jogos lançados</caption>
+                    <caption><h2>Informações técnicas sobre os jogos lançados</h2></caption>
 
                     <thead>
                         <tr>
@@ -207,30 +186,42 @@
                 </table>
             </section>
 
+            <h2 style="color: #ffcc00; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px;">CONHEÇA AS MENTES POR TRÁS DA TRILHA SONORA!</h2>
             <section id="carrossel_musico_padilha"> <!-- Carrossel de músicos -->
+                <div class="botoes_carrossel_padilha">
+                    <button type="button" id="btn_prev_musico_padilha"><</button>
+                </div>
                 <img src="img/Musicos/yuzo_koshiro_foto.webp">
                 <article class="texto_carrossel_padilha">
                     <h2 id="nome_musico_padilha">Yuzo Koshiro</h2>
-                    <p id="sobre_musico_padilha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt ipsam fuga iure? Quibusdam, eligendi id, hic ab laboriosam sed obcaecati tenetur aut praesentium, ipsam quidem culpa fugit libero fugiat?</p>
+                    <p id="sobre_musico_padilha">Yuzo Koshiro é um compositor, arranjador e programador japonês, reconhecido por seu trabalho marcante na música de videogames, especialmente nas séries Streets of Rage, The Revenge of Shinobi e Ys. Seu estilo combina música eletrônica, techno e house, tornando-se uma referência na evolução das trilhas sonoras de jogos. Na franquia Streets of Rage, compôs as trilhas dos três primeiros jogos e retornou em Streets of Rage 4 (2020), contribuindo com faixas como “Main Theme”, “Character Select”, “They're Back”, “Mrs Y” e “Mr Y”.</p>
                 </article>
                 <div class="botoes_carrossel_padilha">
-                    <button type="button" id="btn_next_musico_padilha">Próximo</button>
-                    <button type="button" id="btn_prev_musico_padilha">Anterior</button>
+                    <button type="button" id="btn_next_musico_padilha">></button>
                 </div>
             </section>
 
-            <section id="quiz_franquia"> <!-- Quiz sobre a franquia -->
+            <h2 style="color: #ffcc00; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 40px; justify-self: center;">QUIZ!</h2>
+            <section id="quiz_franquia_padilha"> <!-- Quiz sobre a franquia -->
 
                 <fieldset>
-                    <legend>QUIZ!<br>Será capaz de respondê-lo?</legend>
+                    <legend>Crie uma conta para responder ao nosso Quiz!</legend>
 
-                    <label for="campo_nome">Digite o seu nome para começar!</label><br><br>
+                    <label for="campo_nome">Digite o seu nome:</label><br><br>
                     <input type="text" id="campo_nome" name="nome_visitante" minlength="3" required placeholder='Ex.: "Axel Stone", "Blaze Fielding"'><br><br>
 
-                    <label for="campo_email">Informe seu E-mail, caso queira receber novidades sobre o site!</label><br><br>
-                    <input type="email" id="campo_email" name="email_visitante"><br><br>
+                    <label for="campo_email">Informe seu E-mail:</label><br><br>
+                    <input type="email" id="campo_email" name="email_visitante" placeholder="fulano@outlook.com"><br><br>
 
-                    <button id="btn_quiz_padilha">Começar Quiz!</button>
+                    <label for="campo_senha">Crie sua senha (+6 caracteres e pelo menos um número):</label><br><br>
+                    <input type="password" id="campo_senha" name="senha_visitante" minlenght="6" required><br><br>
+
+                    <label for="confirmacao_senha">Confirme sua senha:</label><br><br>
+                    <input type="password" id="confirmacao_senha" name="senha_visitante_confirm" minlength="6" required><br><br>
+
+                    <button type ="button" id="validar_registro">Criar conta</button>
+
+                    <button type="button" id="btn_quiz_padilha" disabled>Começar Quiz!</button>
 
                 </fieldset>
             </section>
@@ -304,7 +295,7 @@
                         <label for="pergunta4_op6">Spirit Dance</label><br>
 
                         <input type="checkbox" id="pergunta4_op7" name="golpes_axel_blaze" value="dragon_smash">
-                        <label for="pergunta4_op7">Dragon Smash</label><br>
+                        <label for="pergunta4_op7">Dragon Smash</label><br><br>
 
                         <button type ="button" id="btn_confirmar_p4_padilha">Verificar resposta!</button>
 
@@ -322,9 +313,9 @@
 
                         <input type="radio" id="pergunta5_d"
                             name="compositor_original" value="motohiro_kawashima">
-                        <label for="pergunta5_d">Motohiro Kawashima</label><br>
+                        <label for="pergunta5_d">Motohiro Kawashima</label><br><br>
 
-                        <button type ="button" id="btn_confirmar_p5_padilha">Verificar resposta!</button>
+                        <button type ="button" id="btn_confirmar_p5_padilha">Verificar resposta!</button><br><br>
 
                         <h3>Deixe a sua opinião!</h3>
                         <label for="opiniao_visitante">Caso queira, escreva no campo abaixo seu feedback sobre o site!</label>
@@ -338,7 +329,7 @@
 
         </main>
 
-        <footer id="sobre_nos"> <!-- Sobre nós & Copyrights -->
+        <footer id="sobre_nos_padilha"> <!-- Sobre nós & Copyrights -->
             <h3>Sobre o autor</h3>
             <p>Nome: João Victor Alves Padilha</p>
             <p>RGM: XXXXXXXX</p>
