@@ -85,7 +85,7 @@ const musicos = [
     {
         nome: "Yuzo Koshiro",
         foto: "img/Musicos/yuzo_koshiro_foto.webp",
-        sobre: "É o principal nome por trás da identidade musical da trilogia original, tendo composto a trilha de Streets of Rage (1991) e liderado a composição dos dois jogos seguintes. Seu trabalho combina techno, house, electro e breakbeat, explorando de maneira impressionante os recursos sonoros limitados do Mega Drive. Faixas como The Streets of Rage e Go Straight tornaram-se emblemáticas."
+        sobre: "Yuzo Koshiro é um compositor, arranjador e programador japonês, reconhecido por seu trabalho marcante na música de videogames, especialmente nas séries Streets of Rage, The Revenge of Shinobi e Ys. Seu estilo combina música eletrônica, techno e house, tornando-se uma referência na evolução das trilhas sonoras de jogos. Na franquia Streets of Rage, compôs as trilhas dos três primeiros jogos e retornou em Streets of Rage 4 (2020), contribuindo com faixas como “Main Theme”, “Character Select”, “They're Back”, “Mrs Y” e “Mr Y”."
     },
     {
         nome: "Motohiro Kawashima",
@@ -101,6 +101,26 @@ const musicos = [
         nome: "Harumi Fujita",
         foto: "img/Musicos/harumi_fujita_foto.png",
         sobre: "Harumi Fujita é uma compositora japonesa veterana, reconhecida por seu trabalho em jogos clássicos da Capcom, como Final Fight e Mega Man 3. Na franquia Streets of Rage, participou de Streets of Rage 4 (2020), contribuindo com duas faixas: “Estel: Round 1” e “Estel: Round 2”, compostas especialmente para os confrontos contra a personagem Estel."
+    },
+    {
+        nome: "Tee Lopes",
+        foto: "img/Musicos/tee_lopes_foto.webp",    
+        sobre: "Tee Lopes é um compositor e arranjador português renomado, conhecido por seu trabalho em jogos retrô e modernos. Ele integrou a equipe musical da expansão 'Mr. X Nightmare' de Streets of Rage 4, trazendo novas faixas que mesclam nostalgia e modernidade."
+    },
+    {
+        nome: "Scattle",
+        foto: "img/Musicos/scattle_foto.webp",
+        sobre: "Scattle é um produtor musical e compositor conhecido por seu estilo forte de música eletrônica e synthwave. Ele participou da trilha sonora de Streets of Rage 4, contribuindo com batidas marcantes que enriquecem a ação do jogo."
+    },
+    {
+        nome: "Das Mörtal",
+        foto: "img/Musicos/das_mortal_foto.webp",
+        sobre: "Das Mörtal é o projeto musical da produtora electronic/synthwave Živa Žalar. Ela colaborou na trilha sonora de Streets of Rage 4, adicionando uma atmosfera urbana, sombria e enérgica aos cenários do jogo."
+    },
+    {
+        nome: "Priscilla Snow",
+        foto: "img/Musicos/priscilla_snow_foto.webp",
+        sobre: "Priscilla Snow é uma compositora e artista sonora que participou do time de músicos convidados de Streets of Rage 4, ajudando a expandir a diversidade de estilos eletrônicos presentes na sonoridade do título."
     }
 ];
 
@@ -140,6 +160,52 @@ function atualizarMusico () {
 // CÓDIGO REFERENTE AO QUIZ
 // ============================================
 
+// *Validação de cadastro*
+
+const campo_nome = document.getElementById("campo_nome");
+const senha_usuario = document.getElementById("campo_senha");
+const senha_usuario_confirmada = document.getElementById("confirmacao_senha");
+const btnValidarRegistro = document.getElementById("validar_registro");
+
+function validarNome (nome) {
+    const nome_visitante = nome.value.trim();
+
+    if (nome_visitante.length < 3) {
+        alert("Por favor, digite um nome válido com pelo menos 3 caracteres!");
+        nome.focus();
+        return;
+    }
+
+    return true;
+}
+
+function validacaoSenha (senha, senha_confirmada) {
+    if (senha.value.length < 6) {
+        alert("A senha digitada é curta demais! Tente novamente.");
+        senha.focus();
+        return false;
+    }
+
+    if (senha.value !== senha_confirmada.value) {
+        alert("As senhas digitadas não coincidem! Tente novamente.");
+        senha_confirmada.focus();
+        return false;
+    }
+
+    return true;
+}
+
+btnValidarRegistro.addEventListener("click", () => {
+    const nomeValido = validarNome(campo_nome);
+    const senhaValida = validacaoSenha(senha_usuario, senha_usuario_confirmada);
+
+    if (nomeValido && senhaValida) {
+        alert("Conta validada com sucesso! Agora você pode começar o Quiz.");
+    }
+
+    btn_quiz.disabled = false;
+});
+
 // *Abertura e fechamento da janela modal*
 
 const btn_quiz = document.getElementById("btn_quiz_padilha");
@@ -150,22 +216,11 @@ btn_fechar.addEventListener("click", fecharQuiz);
 
 const quiz_modal = document.querySelector(".quiz_modal_padilha");
 
-function abrirQuiz() {
-
-    const campo_nome = document.getElementById("campo_nome");
-    const nome_visitante = campo_nome.value.trim();
-
-    if (nome_visitante.length < 3) {
-        alert("Por favor, digite um nome válido com pelo menos 3 caracteres!");
-        campo_nome.focus();
-        return;
-    }
-
+function abrirQuiz() { 
     quiz_modal.style.display = "block";
 }
 
 function fecharQuiz() {
-
     quiz_modal.style.display = "none";
 }
 
