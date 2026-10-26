@@ -17,7 +17,7 @@
         #container {
             margin: 0 auto;
             width: 100%;
-            max-width: 1000px;
+            max-width: 1200px;
             padding: 20px;
 
             background-color: rgba(20, 20, 30, 0.9);
@@ -66,36 +66,80 @@
         </header>
         
         <main>
-            <img src="img/Streets_of_Rage_logo_(2024).png">
+            <img src="img/logos/Streets_of_Rage_logo_(2024).png">
+
             <section id="apresentacao"> <!-- Ínicio (sobre a franquia) -->
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto unde quos libero maiores ut nesciunt error? Debitis vel architecto animi perspiciatis nulla, voluptas, incidunt aperiam, recusandae cupiditate illum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error itaque, in odio esse voluptates natus consequuntur recusandae ipsa voluptatem, sequi, enim dolorum sit nostrum deserunt doloribus libero! Repellendus, facilis?</p>
+                <h2>Sobre Streets of Rage</h2>
+                    <p>
+                        Lançada originalmente em 1991 pela SEGA para o Mega Drive,
+                        <strong>Streets of Rage</strong> é uma das franquias mais
+                        marcantes do gênero beat 'em up, conhecido no Brasil como
+                        jogo de briga de rua. Com combates intensos, cenários urbanos
+                        e uma trilha sonora eletrônica inesquecível, a série conquistou
+                        uma legião de fãs e se tornou um dos grandes clássicos da era
+                        dos consoles de 16 bits.
+                    </p><br><br>
+
+                    <p>
+                        No Japão, a franquia é conhecida como <em>Bare Knuckle</em> (ベア・ナックル),
+                        expressão que faz referência às lutas com os punhos. A aventura
+                        acompanha personagens como Axel Stone, Blaze Fielding e Adam
+                        Hunter em sua luta contra o crime organizado que domina Wood
+                        Oak City. A combinação de ação, jogabilidade cooperativa e
+                        música marcante ajudou a estabelecer a identidade da série.
+                    </p><br><br>
+
+                    <p>
+                        Após três títulos lançados entre 1991 e 1994, a franquia passou
+                        por um longo período sem um novo capítulo principal. Apesar da
+                        ausência, seus jogos continuaram populares entre os fãs,
+                        mantendo vivo o legado de uma das séries mais queridas da SEGA.
+                    </p><br><br>
+
+                    <p>
+                        Esse legado ganhou um novo capítulo em 2020, com o lançamento
+                        de <em>Streets of Rage 4</em>. Desenvolvido pela Lizardcube e
+                        pela Guard Crush Games, com publicação da Dotemu, o jogo
+                        resgatou a essência dos clássicos e apresentou gráficos
+                        desenhados à mão, novas mecânicas e o retorno de personagens
+                        conhecidos, aproximando antigos admiradores de uma nova
+                        geração de jogadores.
+                    </p><br><br>
+
+                    <p>
+                        Mais de três décadas após sua estreia, <strong>Streets of Rage</strong>
+                        continua sendo lembrado por sua ação cooperativa, seus
+                        personagens carismáticos e sua identidade musical. Uma franquia
+                        que atravessou gerações e permanece como um símbolo da história
+                        dos videogames.
+                    </p><br><br>
             </section>
 
             <h2>SELECIONE O SEU PERSONAGEM!</h2> <!-- Seleção de personagens -->
             <section class="personagens_padilha">
                 <div class="cards_selecao_personagens_padilha">
-                        <button>Axel Stone</button>
-                        <button>Blaze Fielding</button>
-                        <button>Adam Hunter</button>
-                        <button>Cherry Hunter</button>
-                        <button>Floyd Iraia</button>
-                        <button>Estel Aguirre</button>
-                        <button>Max Thunder</button>
-                        <button>Shiva</button>
-                        <button>Skate Hunter</button>
-                        <button>Dr. Zan</button>
+                        <button type="button" id="card_axel"><img src="img/Personagens/Axel Stone/Axel_Stone_HUD.png"></button>
+                        <button type="button" id="card_blaze"><img src="img/Personagens/Blaze Fielding/Blaze_Fielding_HUD.png"></button>
+                        <button type="button" id="card_adam"><img src="img/Personagens/Adam Hunter/Adam_Hunter_HUD.webp"></button>
+                        <button type="button" id="card_cherry"><img src="img/Personagens/Cherry Hunter/Cherry_Hunter_HUD.webp"></button>
+                        <button type="button" id="card_floyd"><img src="img/Personagens/Floyd Iraia/Floyd_Iraya_HUD.webp"></button>
+                        <button type="button" id="card_estel"><img src="img/Personagens/Estel Aguirre/Estel_Aguirre_HUD.webp"></button>
+                        <button type="button" id="card_max"><img src="img/Personagens/Max Thunder/Max_Thunder_HUD.webp"></button>
+                        <button type="button" id="card_shiva"><img src="img/Personagens/Shiva/Shiva_HUD.webp"></button>
+                        <button type="button" id="card_skate"><img src="img/Personagens/Skate Hunter/Skate_Hunter_HUD.webp"></button>
+                        <button type="button" id="card_zan"><img src="img/Personagens/Dr. Zan/Dr_Zan_HUD.webp"></button>
                 </div>
-                <aside id="painel_personagem">
-                    <img src="img/Personagens/Axel Stone/Axel_Stone_Idle.gif">
+                <aside id="painel_personagem_padilha">
+                    <img>
                 </aside>
             </section>
 
             <section id="historia_jogos_padilha"> <!-- História dos jogos -->
                 <div class="botoes_historia_padilha">
-                    <button type="button" id="btn_sor1_padilha">SOR1</button>
-                    <button type="button" id="btn_sor2_padilha">SOR2</button>
-                    <button type="button" id="btn_sor3_padilha">SOR3</button>
-                    <button type="button" id="btn_sor4_padilha">SOR4</button>
+                    <button type="button" id="btn_sor1_padilha"><img src="img/logos/Streets_of_Rage_logo_(2024).png"></button>
+                    <button type="button" id="btn_sor2_padilha"><img src="img/logos/Streets_of_Rage_2.png"></button>
+                    <button type="button" id="btn_sor3_padilha"><img src="img/logos/Streets_of_Rage_3.png"></button>
+                    <button type="button" id="btn_sor4_padilha"><img src="img/logos/Streets_of_Rage_4.png"></button>
                 </div>
 
                 <p id="texto_historia_padilha">Selecione um jogo ao lado para ler sua história.</p>
@@ -142,7 +186,7 @@
                             <td>Streets of Rage 4 🇺🇸 (Bare Knuckle IV 🇯🇵)</td>
                             <td>2020</td>
                             <td>PC, Nintendo Switch, PlayStation 4 & Xbox One.</td>
-                            <td>Dotemu</td>
+                            <td>Lizardcube</td>
                             <td>8.0</td>
                         </tr>
                         <tr> <!-- SOR:R -->
@@ -170,8 +214,8 @@
                     <p id="sobre_musico_padilha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam incidunt ipsam fuga iure? Quibusdam, eligendi id, hic ab laboriosam sed obcaecati tenetur aut praesentium, ipsam quidem culpa fugit libero fugiat?</p>
                 </article>
                 <div class="botoes_carrossel_padilha">
-                    <button type="button">Próximo</button>
-                    <button type="button">Anterior</button>
+                    <button type="button" id="btn_next_musico_padilha">Próximo</button>
+                    <button type="button" id="btn_prev_musico_padilha">Anterior</button>
                 </div>
             </section>
 
@@ -193,7 +237,7 @@
 
             <div class="quiz_modal_padilha">
                 <button type="button" id="btn_fechar_quiz_padilha">X</button>
-                <form>
+                <form id="form_quiz_padilha">
                     <fieldset>
                         <legend>QUIZ - FRANQUIA STREETS OF RAGE</legend>
 
@@ -205,7 +249,7 @@
                             <option value="adam">Adam Hunter</option>
                             <option value="blaze">Blaze Fielding</option>
                         </select>
-                        <button>Confirmar</button>
+                        <button type ="button" id="btn_confirmar_p1_padilha">Verificar resposta!</button>
 
                         <br><br><label>2. Qual personagem de Streets of Rage 1 está por trás do Sindicato do Crime?</label><br><br>
 
@@ -221,7 +265,7 @@
                         <input type="radio" id="pergunta2_d" name="antagonista_jogo2" value="diva">
                         <label for="pergunta2_d">Diva</label><br><br>
 
-                        <button>Confirmar</button>
+                        <button type ="button" id="btn_confirmar_p2_padilha">Verificar resposta!</button>
 
                         <br><br><label>3. Qual plataforma estreiou a franquia Streets of Rage em 1991?</label><br><br>
 
@@ -237,7 +281,7 @@
                         <input type="radio" id="pergunta3_d" name="plataforma_original" value="mega drive">
                         <label for="pergunta3_d">Sega Mega Drive</label><br><br>
 
-                        <button>Confirmar</button>
+                        <button type ="button" id="btn_confirmar_p3_padilha">Verificar resposta!</button>
 
                         <br><br><label>4. Quais golpes pertencem a Axel Stone e Blaze Fielding?</label><br><br>
 
@@ -262,7 +306,7 @@
                         <input type="checkbox" id="pergunta4_op7" name="golpes_axel_blaze" value="dragon_smash">
                         <label for="pergunta4_op7">Dragon Smash</label><br>
 
-                        <button>Confirmar</button>
+                        <button type ="button" id="btn_confirmar_p4_padilha">Verificar resposta!</button>
 
                         <br><br><label>5. Quem é o lendário compositor responsável pela icônica trilha sonora eletrônica da trilogia Clássica?</label><br><br>
 
@@ -280,11 +324,13 @@
                             name="compositor_original" value="motohiro_kawashima">
                         <label for="pergunta5_d">Motohiro Kawashima</label><br>
 
-                        <button type="button">Confirmar</button>
+                        <button type ="button" id="btn_confirmar_p5_padilha">Verificar resposta!</button>
 
                         <h3>Deixe a sua opinião!</h3>
                         <label for="opiniao_visitante">Caso queira, escreva no campo abaixo seu feedback sobre o site!</label>
                         <textarea id="opiniao_visitante" name="analise_site" rows="10" cols="75" placeholder="Escreva aqui!"></textarea>
+
+                        <button type="submit" id="btn_enviar_quiz_padilha">Enviar Respostas</button>
                 
                     </fieldset>
                 </form>
@@ -293,7 +339,13 @@
         </main>
 
         <footer id="sobre_nos"> <!-- Sobre nós & Copyrights -->
+            <h3>Sobre o autor</h3>
+            <p>Nome: João Victor Alves Padilha</p>
+            <p>RGM: XXXXXXXX</p>
+            <p>Curso: Engenharia de Software</p><br>
 
+            <h3>Copyrights</h3>
+            <p>© 2026 — Fan site desenvolvido para fins acadêmicos. Streets of Rage e seus elementos originais pertencem aos respectivos titulares, incluindo a SEGA. Projeto independente, não oficial e sem afiliação ou endosso da SEGA.</p>
         </footer>
 
     </div>
