@@ -1,4 +1,49 @@
-.selecao-personagem_padilha {
+body {
+    background-image: url('img/background/SOR_background.webp');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0a0a10;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.personagens_padilha {
+    display: flex;
+}
+
+.cards_selecao_personagens_padilha {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+#historia_jogos_padilha {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#historia_jogos_padilha p {
+    align-self: center;
+}
+
+.botoes_historia_padilha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#carrossel_musico_padilha {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.botoes_carrossel_padilha {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
